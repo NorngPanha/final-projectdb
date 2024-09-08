@@ -1,0 +1,463 @@
+* {
+    /* Reset some default styles */
+    /* heander */
+    body,
+    h1,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    /* CSS file (style.css or within a <style> tag) */
+    header {
+        background-color: #f8f9fa;
+        /* Optional: to distinguish the header area */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border-bottom: 1px solid #dee2e6;
+        /* Optional: to add a border line */
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        /* Distributes space between elements */
+        align-items: center;
+        /* Centers items vertically */
+    }
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        /* Align items to the start (left) */
+    }
+    .nav-links li {
+        margin-right: 50px;
+        /* Space between menu items */
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        /* Color of the navigation links */
+        font-size: 16px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+    .search-container input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .search-container button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .search-container button:hover {
+        background-color: #0056b3;
+    }
+    .menu-toggle {
+        display: none;
+        /* Hide the menu toggle by default */
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            /* Hide navigation links on smaller screens */
+        }
+        .menu-toggle {
+            display: block;
+            /* Show menu toggle on smaller screens */
+        }
+    }
+    /* Reset some default styles */
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li,
+    form {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f4f4f4;
+    }
+    header {
+        background: #cec6c65f;
+        color: #000000;
+        padding: 5px 0;
+    }
+    /* font khmer */
+    @font-face {
+        font-family: 'KhmerOS';
+        src: url('fonts/KhmerOS.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Google Fonts Example */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;700&display=swap');
+    .logo h1 {
+        font-family: 'khmerOS', sans-serif;
+        /* Apply Google Font */
+    }
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero {
+        background: #333;
+        color: #fff;
+        padding: 60px 0;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    section {
+        padding: 20px;
+    }
+    /* .container {
+        width: 80%;
+        margin: 0 auto;
+    } */
+    form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    form button {
+        padding: 10px 20px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    form button:hover {
+        background: #0056b3;
+    }
+    footer {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    /* footer css pages */
+    /* Footer Styles */
+    footer {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: 1;
+        padding: 0 15px;
+    }
+    .footer-left h3,
+    .footer-center h3,
+    .footer-right h3 {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-left p,
+    .footer-center p {
+        margin-bottom: 10px;
+    }
+    .socials {
+        list-style: none;
+        padding: 0;
+    }
+    .socials li {
+        margin-bottom: 10px;
+    }
+    .socials a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .socials a:hover {
+        text-decoration: underline;
+    }
+    .footer-bottom {
+        background: #222;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .section-1 .welcom {
+        text-align: center;
+    }
+    .section-1 .map img {
+        width: 100%;
+        /* Scale image to the width of its container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+    .header-2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .provinces-list {
+        padding: 0 20px;
+    }
+    .provinces-list h2 {
+        margin-bottom: 20px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* Adjust gap between columns as needed */
+    }
+    .col {
+        flex: 1;
+        min-width: calc(33.333% - 20px);
+        /* 3 columns layout */
+        box-sizing: border-box;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        margin-bottom: 10px;
+        /* Adjust spacing between list items as needed */
+    }
+    li i {
+        margin-right: 8px;
+        /* Space between icon and text */
+    }
+    /* Style for the map section */
+    .map {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically (if needed) */
+        height: 100%;
+        /* Ensure the div takes the full height of its container */
+        margin: 0 auto;
+        /* Center horizontally within the container */
+    }
+    /* Style for the image within the map div */
+    .map img {
+        max-width: 50%;
+        /* Ensure the image doesn't overflow the container */
+        height: auto;
+        /* Maintain aspect ratio */
+        display: block;
+        /* Remove any extra space below the image */
+    }
+    /* Sign-In Page Styles */
+    .signin-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .signin-section .container {
+        background: #fff;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    .signin-section h1 {
+        margin-bottom: 1rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+    .form-group input {
+        width: 100%;
+        padding: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: .75rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    p a {
+        color: #007bff;
+    }
+    /* Sign-Up Page Styles */
+    .signup-section {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .signup-section .container {
+        background: #fff;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    .signup-section h1 {
+        margin-bottom: 1rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: .5rem;
+    }
+    .form-group input {
+        width: 100%;
+        padding: .5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: .75rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+    p a {
+        color: #007bff;
+    }
+    .sr {
+        display: flex;
+        align-items: flex-start;
+    }
+    .content {
+        display: flex;
+        align-items: flex-start;
+    }
+    .content img {
+        margin-left: 20px;
+        /* Adjust space between text and image as needed */
+        max-width: 100%;
+        /* Ensure image scales properly within container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+    .content p {
+        flex: 1;
+        /* Allow text to take up remaining space */
+    }
+    .content {
+        display: flex;
+        /* Use flexbox to align items */
+        align-items: flex-start;
+        /* Align items at the start of the cross axis (top) */
+    }
+    .content img {
+        margin-right: 30px;
+        /* Add 30px space to the right of the image */
+    }
+    /* provinces-list​ li */
+    .provinces-list li a {
+        text-decoration: none;
+        color: #504f4f;
+    }
+    .provinces-list li a:hover {
+        color: #3933f1;
+    }
+    /* about page .pro-vinces link */
+    .pro-vinces a {
+        text-decoration: none;
+        color: #0f0e0e;
+    }
+    .pro-vinces a:hover {
+        color: #3933f1;
+    }
+    /* action on nav header */
+    /* Style for the active nav link */
+    .nav-links .active a {
+        color: #007bff;
+        /* Change text color for the active link */
+        font-weight: bold;
+        /* Make the text bold */
+        text-decoration: none;
+        /* Remove underline */
+    }
+    /* Optional: Style for the regular links */
+    .nav-links a {
+        text-decoration: none;
+        /* Ensure no underline for all links */
+        color: #333;
+        /* Default color */
+    }
+    .nav-links a:hover {
+        color: #3933f1;
+        /* Hover color */
+    }
+    .contact-section-contact .btn:hover {
+        background-color: #0056b3;
+    }
+    /* search */
+    .search-container {
+        display: flex;
+        align-items: center;
+        /* Add other styles as needed */
+    }
+}
